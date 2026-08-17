@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Joe Miles — Mechanical Engineering</title>
 <meta name="description" content="Joe Miles — Mechanical Engineering student at TCU. Portfolio of projects, experience, and skills.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-header">
+  <div class="header-bar"></div>
   <nav class="nav-container">
-    <a href="#top" class="logo">Joe Miles</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -22,6 +22,10 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <a href="#top" class="logo">Joe Miles</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 </header>
 
@@ -40,12 +44,20 @@
         <a href="#projects" class="btn btn-primary">View Projects</a>
         <a href="#contact" class="btn btn-secondary">Get in Touch</a>
       </div>
+      <div class="hero-social">
+        <a href="https://www.linkedin.com/in/joe-miles-601083385/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="mailto:joesherman2006@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 6.2 7.8-6.2H4.2zM20 7.3l-7.53 5.99a.75.75 0 0 1-.94 0L4 7.3v11.2h16V7.3z"/></svg>
+        </a>
+      </div>
     </div>
   </section>
 
   <section class="section" id="about">
     <div class="section-inner">
-      <h2><span class="section-number">01</span> About Me</h2>
+      <h2>About Me</h2>
       <p class="lead">
         I'm a Mechanical Engineering major at the TCU College of Science and Engineering, with internship
         experience designing spinal implant instruments and machined prototypes at ATEC Spine. I enjoy
@@ -56,7 +68,7 @@
 
   <section class="section section-alt" id="skills">
     <div class="section-inner">
-      <h2><span class="section-number">02</span> Skills</h2>
+      <h2>Skills</h2>
       <div class="skills-grid">
         <div class="skill-card">
           <h3>Technical</h3>
@@ -98,33 +110,37 @@
 
   <section class="section" id="projects">
     <div class="section-inner">
-      <h2><span class="section-number">03</span> Projects</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-icon" aria-hidden="true">🖥️</div>
+      <h2>Personal Projects</h2>
+
+      <div class="story-row">
+        <div class="story-photo">
+          <img src="assets/images/pc-build.jpg" alt="Custom-built gaming PC with RGB lighting, open tempered-glass case showing an NZXT AIO cooler, Gigabyte GPU, and RGB fans">
+        </div>
+        <div class="story-text">
           <h3>PC Build</h3>
-          <p>Built my own computer from scratch, gaining hands-on experience with hardware components,
-             system assembly, compatibility, and troubleshooting.</p>
-        </article>
-        <article class="project-card">
-          <div class="project-icon" aria-hidden="true">🚗</div>
+          <p>Built my own computer from scratch — planning the parts list, checking compatibility across the
+             motherboard, cooling, and GPU, and assembling everything by hand. Routing the cabling and getting
+             the liquid cooling loop right taught me a lot about patience and troubleshooting under pressure.</p>
+        </div>
+      </div>
+
+      <div class="story-row story-row-reverse">
+        <div class="story-photo">
+          <img src="assets/images/bmw-project.jpg" alt="Joe's BMW M4 in a garage with an aftermarket wheel and tire set out front">
+        </div>
+        <div class="story-text">
           <h3>Automotive Projects</h3>
-          <p>Worked on and modified my own car, developing hands-on mechanical skills and learning how
-             different vehicle systems work together.</p>
-        </article>
-        <article class="project-card">
-          <div class="project-icon" aria-hidden="true">⚙️</div>
-          <h3>ATEC Experience</h3>
-          <p>Gained hands-on experience in an engineering and manufacturing environment, working with
-             real-world processes and developing practical technical skills.</p>
-        </article>
+          <p>Worked on and modified my own BMW M4, from wheel and suspension upgrades to general maintenance.
+             Learning how the car's systems fit together — and fixing what breaks — has been one of the best
+             hands-on complements to what I study in the classroom.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section section-alt" id="experience">
     <div class="section-inner">
-      <h2><span class="section-number">04</span> Experience</h2>
+      <h2>Experience</h2>
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-header">
@@ -158,7 +174,7 @@
 
   <section class="section" id="contact">
     <div class="section-inner contact-inner">
-      <h2><span class="section-number">05</span> Get In Touch</h2>
+      <h2>Get In Touch</h2>
       <p class="lead">Interested in working together or just want to say hi? Reach out.</p>
       <div class="contact-links">
         <a href="mailto:joesherman2006@gmail.com" class="btn btn-primary">Email Me</a>
@@ -171,6 +187,10 @@
 <footer class="site-footer">
   <p>&copy; <span id="year"></span> Joe Miles. Built with HTML &amp; CSS, hosted on GitHub Pages.</p>
 </footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
 
 <script src="script.js"></script>
 </body>

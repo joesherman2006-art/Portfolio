@@ -14,3 +14,13 @@ navLinks.querySelectorAll("a").forEach((link) => {
     navToggle.setAttribute("aria-expanded", "false");
   });
 });
+
+const scrollTopBtn = document.getElementById("scrollTop");
+
+window.addEventListener("scroll", () => {
+  scrollTopBtn.classList.toggle("visible", window.scrollY > 500);
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
